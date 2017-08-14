@@ -5,11 +5,9 @@ const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
 
-const datas = require('./api/datas');
+const datas = require('http://504080.com/api/v1/services/categories');
 
 const app = express();
-
-let nextId = 5;
 
 app.set('port', (process.env.PORT || 3000));
 
@@ -22,20 +20,8 @@ app.use((req, res, next) => {
     next();
 });
 
-app.get('/api/datas', (req, res) => {
+app.get('http://504080.com/api/v1/services/categories', (req, res) => {
     res.send(datas);
-});
-
-app.post('/api/datas', (req, res) => {
-    const todo = {
-        id: nextId++,
-        title: req.body.title,
-        completed: false
-    };
-
-    datas.push(todo);
-
-    res.send(todo);
 });
 
 app.get('*', (req, res) => {

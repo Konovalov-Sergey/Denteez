@@ -28,16 +28,20 @@ function Header(props) {
 					className="logo"
 					style={logo}>
 				</Link>
-				<input 
-					type="text" 
-					className="search"
-					style={search}
-					placeholder="Company Name"
-				/>
-				<Link to="/" className="ava right">
-					<span style={ava}></span>
-					<i>Maximillian Beekeeper</i>
-				</Link>
+				<form className="left">
+					<input 
+						type="text" 
+						className="search"
+						style={search}
+						placeholder="Company Name"
+					/>
+				</form>
+				<div className="ava right">
+					<Link to="/">
+						<span style={ava}></span>
+						<i>Maximillian Beekeeper</i>
+					</Link>
+				</div>
 				<ul className="nav right">
 					<li><Link to="/" style={chat}></Link></li>
 					<li><Link to="/" style={notification}></Link></li>

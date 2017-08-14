@@ -11,20 +11,17 @@ function CompanyItem(props) {
 					style={props.style}>
 				</span>
 			</Link>
-			<ul className="right">
-				<li className="name">
+			<div className="right">
+				<h4 className="name">
 					<Link to="">{props.name}</Link>
-				</li>
-				<li className="type">
-					<Link to="">{props.type}</Link>
-				</li>
-				<li className="location">
-					<Link to="">{props.location}</Link>
-				</li>
-				<li className="follow">
+				</h4>
+				<p className="type">{props.type}</p>
+				<p className="location">					{props.location}
+				</p>
+				<p className="follow">
 					<Link to="">{props.follow}</Link>
-				</li>
-			</ul>
+				</p>
+			</div>
 		</div>
 	);
 }

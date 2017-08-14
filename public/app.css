@@ -111,7 +111,7 @@ body {
 	width: 27px;
 	height: 25px;
 }
-#header .ava {
+#header .ava a {
 	width: 212px;
 	padding-top: 6px;
 	font-size: 16px;
@@ -125,7 +125,7 @@ body {
 	border-radius: 3px;
 }
 #header .ava i {
-	vertical-align: 60%;
+	vertical-align: 50%;
 }
 /*main*/
 #main .inner {
@@ -151,12 +151,15 @@ body {
 	border-bottom: 1px solid #e0e2e6;
 }
 .menu li a {
-	display: inline-block;
+	display: block;
 	padding-left: 50px;
 	font-size: 16px;
 	line-height: 25px;
 	color: #59606b;
 	height: 25px;
+}
+.menu li a:hover {
+	color: #87b448;
 }
 .advertise {
 	margin-bottom: 20px;
@@ -176,6 +179,12 @@ body {
 	margin-bottom: 19px;
 	font-size: 11px;
 	color: #d3d3d3;
+}
+.advertise p a {
+	display: block;
+}
+.advertise p a:hover {
+	color: #87b448;
 }
 .company {
 	border-bottom: 1px solid #e0e2e6;
@@ -202,18 +211,24 @@ body {
 	height: 80px;
 	border-radius: 3px;
 }
-.company-content a {
+.company-content .img:hover {
+	border-radius: 50%;
+}
+.company-content p {
 	line-height: 20px;
+}
+.company-content .name {
+	margin-bottom: 3px;
 }
 .company-content .name a{
 	font-size: 16px;
 	color: #1c2534;
 }
-.company-content .type a{
+.company-content .type {
 	font-size: 14px;
 	color: #7c8695;
 }
-.company-content .location a{
+.company-content .location {
 	font-size: 14px;
 	color: #7c8695;
 }
@@ -221,12 +236,18 @@ body {
 	font-size: 12px;
 	color: #1c2534;
 }
+.company-content a:hover {
+	color: #87b448;
+}
 .company-foot {
 	font-size: 12px;
 	color: #b7bfcd;
 }
 .company-foot p {
 	margin-bottom: 18px;
+}
+.company-foot p a:hover {
+	color: #87b448;
 }
 .company-foot p span {
 	margin-right: 20px;
@@ -277,6 +298,12 @@ body {
 	overflow: hidden;
 	text-align: center;
 }
+#middleContent .service img:hover {
+	background: #f4f7fb;
+}
+#middleContent .service p:hover {
+	color: #87b448;
+}
 @media screen and (max-width: 1150px) {
 	#middleContent .service {
 		-ms-flex-preferred-size: 33%;
@@ -288,10 +315,6 @@ body {
 	height: 138px;
 	border: 1px solid #e0e2e6;
 	margin-bottom: 18px;
-}
-#middleContent .service img:hover {
-	background: #f4f7fb;
-	cursor: pointer;
 }
 #middleContent .service p {
 	width: 140px;
@@ -311,6 +334,9 @@ body {
 }
 .people-content {
 	margin-bottom: 20px;
+}
+.people-content a:hover {
+	color: #87b448;
 }
 .people h4 {
 	margin-bottom: 9px;
@@ -335,16 +361,24 @@ body {
 	height: 80px;
 	border-radius: 3px;
 }
-.person ul a {
-	display: inline-block;
+.person .photo:hover {
+	border-radius: 50%;
+}
+.person ul li {
 	width: 122px;
 	line-height: 20px;
 }
-.person .prof a{
+.person ul li a {
+	display: block;
+}
+.person ul li a:hover {
+	color: #87b448;
+}
+.person .prof {
 	font-size: 14px;
 	color: #7c8695;
 }
-.person .location a{
+.person .location {
 	font-size: 14px;
 	color: #7c8695;
 }
@@ -364,6 +398,9 @@ body {
 	font-size: 16px;
 	color: #1c2534;
 }
+.product-content h4 a:hover {
+	color: #87b448;
+}
 .product-name {
 	margin-bottom: 20px;
 }
@@ -376,13 +413,19 @@ body {
 	font-size: 14px;
 	color: #1c2534;
 }
+.product-name .right p {
+	overflow: hidden;
+}
 .product-item .img {
 	display: inline-block;
 	width: 80px;
 	height: 80px;
 	border-radius: 3px;
 }
-.product-item ul a {
+.product-item .img:hover {
+	border-radius: 50%;
+}
+.product-item .right {
 	display: block;
 	width: 122px;
 	font-size: 14px;

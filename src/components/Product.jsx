@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Product(props) {
 	return (
 		<div className="product-content">
-			<h4>{props.name}</h4>
+			<h4><Link to="/">{props.name}</Link></h4>
 			<div className="product-item">
 				<Link to="/">
 					<span 
@@ -13,14 +13,10 @@ function Product(props) {
 						style={props.style}>
 					</span>
 				</Link>
-				<ul className="right">
-					<li>
-						<Link to="">{props.product}</Link>
-					</li>
-					<li>
-						<Link to="">{props.description}</Link>
-					</li>
-				</ul>
+				<div className="right">
+					<h5>{props.product}</h5>
+					<p>{props.description}</p>
+				</div>
 			</div>
 		</div>
 	);

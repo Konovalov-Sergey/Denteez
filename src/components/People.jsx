@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function People(props) {
 	return (
 		<div className="people-content">
-			<h4>{props.fio}</h4>
+			<h4><Link to="/">{props.fio}</Link></h4>
 			<div className="person">
 				<Link to="/">
 					<span 
@@ -15,10 +15,10 @@ function People(props) {
 				</Link>
 				<ul className="right">
 					<li className="prof">
-						<Link to="">{props.prof}</Link>
+						{props.prof}
 					</li>
 					<li className="location">
-						<Link to="">{props.location}</Link>
+						{props.location}
 					</li>
 					<li className="add">
 						<Link to="">{props.add}</Link>

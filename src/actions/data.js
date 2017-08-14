@@ -8,10 +8,15 @@ export function requestData() {
 }
 
 export function getData() {
-	return fetch('api/datas')
+	return fetch('http://504080.com/api/v1/services/categories', {
+		method: 'GET',
+		headers: {
+			Authorization:'d9917a53ee3b7526e761615a4ed296bada91c4ca'
+		}
+	})
 		.then(response => response.json())
 		.then(datas => ({
 			type: GET_DATA,
-			datas
+			datas: datas.data
 	}));
 }

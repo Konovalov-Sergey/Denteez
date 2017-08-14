@@ -49,7 +49,10 @@ function CompanyFeature(props) {
 			</div>
 			<div className="company-foot">
 				<p>Denteez Copyright 2015</p>
-				<p><span>Terms of use</span>Privacy Policy</p>
+				<p>
+					<span><Link to="/">Terms of use</Link></span>
+					<Link to="/">Privacy Policy</Link>
+				</p>
 			</div>
 		</div>
 	);
